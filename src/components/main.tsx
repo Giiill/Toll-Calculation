@@ -1,11 +1,12 @@
 import { Bar } from "./bar";
+import { Content } from "./content";
 
 
 function Main() {
     return (
         <>
             <Bar />
-            <h1>Hi</h1>
+            <Content />
         </>
     )
 }

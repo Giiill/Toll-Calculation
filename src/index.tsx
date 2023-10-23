@@ -9,9 +9,10 @@ import './reset.css';
 import { BrowserRouter } from 'react-router-dom';
 
 const MyRootComponent = styled(Box)(({theme}) => ({
-  backgroundColor: theme.palette.secondary.main,
+  backgroundColor: '#1c1c1c',
   width: '100vw',
   height: '100vh',
+  overflow: 'hidden'
 }))
 
 const AppWithTheme = () => {
