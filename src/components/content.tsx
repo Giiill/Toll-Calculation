@@ -60,17 +60,19 @@ const MainBox = styled(Box)(({ theme }) => ({
     width: '100%',
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: 'rgba(56, 56, 56, 0.6)',
     height: '100%',
+    opacity: 1,
 }));
 
 const SnowfallClosingBox = styled(Box)(({ theme }) => ({
     width: '100%',
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: 'rgba(56, 56, 56, 0.6)',
     height: '100%',
     zIndex: 1,
+    
 }))
 
 const Calculation = styled(Box)(({ theme }) => ({
@@ -85,9 +87,11 @@ const Calculation = styled(Box)(({ theme }) => ({
     marginLeft: '20px',
     marginRight: '20px',
     display: 'flex',
+    position: 'absolute',
     justifyContent: 'center',
     gap: '30px',
     alignItems: 'center',
+    opacity: 1,
 }));
 
 const TypographyThePanels = styled(Typography)(() => ({

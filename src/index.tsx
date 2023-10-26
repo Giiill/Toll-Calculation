@@ -7,9 +7,10 @@ import Box from '@mui/material/Box';
 import { styled } from '@mui/material';
 import './reset.css';
 import { BrowserRouter } from 'react-router-dom';
+import backgroundImage from './assets/backgroundImage.jpg';
 
 const MyRootComponent = styled(Box)(({ theme }) => ({
-  backgroundColor: '#1c1c1c',
+  backgroundImage: `url(${backgroundImage})`,
   width: '100vw',
   height: '100vh',
   overflow: 'hidden'
@@ -19,7 +20,7 @@ const AppWithTheme = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <MyRootComponent>
-        <App />
+          <App />
       </MyRootComponent>
     </ThemeProvider>
   );

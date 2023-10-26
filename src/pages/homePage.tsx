@@ -9,7 +9,7 @@ function HomePage() {
             <Snowfall
                 color="#fff"
                 snowflakeCount={100}
-                speed={[1.0, 6.0]}
+                speed={[1.0, 2.0]}
             />
             <Bar />
             <Content />
