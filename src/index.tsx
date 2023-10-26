@@ -8,12 +8,12 @@ import { styled } from '@mui/material';
 import './reset.css';
 import { BrowserRouter } from 'react-router-dom';
 
-const MyRootComponent = styled(Box)(({theme}) => ({
+const MyRootComponent = styled(Box)(({ theme }) => ({
   backgroundColor: '#1c1c1c',
   width: '100vw',
   height: '100vh',
   overflow: 'hidden'
-}))
+}));
 
 const AppWithTheme = () => {
   return (

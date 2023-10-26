@@ -4,42 +4,45 @@ import { styled } from '@mui/material';
 import InputBase from '@mui/material/InputBase';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+
 function Content() {
     return (
-
         <MyContainer>
             <MainBox>
-                <Calculation>
-                    <Box sx={{ backgroundColor: 'silver', width: 300, height: 300 }}></Box>
-                    <InputPanels>
-                        <InputPanel>
-                            <TypographyThePanels>Сумма месячного оклада</TypographyThePanels>
-                            <DataInputPanel
-                                type="number"
-                            />
-                        </InputPanel>
-                        <InputPanel>
-                            <TypographyThePanels>Всего рабочих дней в месяце</TypographyThePanels>
-                            <DataInputPanel
-                                type="number"
-                            />
-                        </InputPanel>
-                        <InputPanel>
-                            <TypographyThePanels>Количество отработанных дней</TypographyThePanels>
-                            <DataInputPanel
-                                type="number"
-                            />
-                        </InputPanel>
-                        <InputPanel>
+                <SnowfallClosingBox>
+                    <Calculation>
+                        <Box sx={{ backgroundColor: 'silver', width: 300, height: 300 }}></Box>
+                        <InputPanels>
+                            <InputPanel>
+                                <TypographyThePanels>Сумма месячного оклада</TypographyThePanels>
+                                <DataInputPanel
+                                    type="number"
+                                />
+                            </InputPanel>
+                            <InputPanel>
+                                <TypographyThePanels>Всего рабочих дней в месяце</TypographyThePanels>
+                                <DataInputPanel
+                                    type="number"
+                                />
+                            </InputPanel>
+                            <InputPanel>
+                                <TypographyThePanels>Количество отработанных дней</TypographyThePanels>
+                                <DataInputPanel
+                                    type="number"
+                                />
+                            </InputPanel>
+                            <InputPanel>
 
-                            <TypographyThePanels>Премия</TypographyThePanels>
-                            <DataInputPanel
-                                type="number"
-                            />
-                        </InputPanel>
-                        <CalculationButton variant="outlined">РАССЧИТАТЬ</CalculationButton>
-                    </InputPanels>
-                </Calculation>
+                                <TypographyThePanels>Премия</TypographyThePanels>
+                                <DataInputPanel
+                                    type="number"
+                                />
+                            </InputPanel>
+                            <CalculationButton variant="outlined">РАССЧИТАТЬ</CalculationButton>
+                        </InputPanels>
+
+                    </Calculation>
+                </SnowfallClosingBox>
             </MainBox>
         </MyContainer>
 
@@ -51,7 +54,6 @@ export { Content }
 
 const MyContainer = styled(Container)(({ theme }) => ({
     height: '100%',
-    msOverflowX: 'auto'
 }))
 
 const MainBox = styled(Box)(({ theme }) => ({
@@ -60,6 +62,15 @@ const MainBox = styled(Box)(({ theme }) => ({
     justifyContent: 'center',
     backgroundColor: theme.palette.secondary.main,
     height: '100%',
+}));
+
+const SnowfallClosingBox = styled(Box)(({ theme }) => ({
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: theme.palette.secondary.main,
+    height: '100%',
+    zIndex: 1,
 }))
 
 const Calculation = styled(Box)(({ theme }) => ({
@@ -77,11 +88,9 @@ const Calculation = styled(Box)(({ theme }) => ({
     justifyContent: 'center',
     gap: '30px',
     alignItems: 'center',
-
 }));
 
 const TypographyThePanels = styled(Typography)(() => ({
-   
     minWidth: '300px',
 }))
 
@@ -93,7 +102,7 @@ const InputPanels = styled(Box)(() => ({
     alignItems: 'center',
     gap: '10px',
     minWidth: '300px',
-   
+
 }))
 
 const InputPanel = styled(Box)(() => ({

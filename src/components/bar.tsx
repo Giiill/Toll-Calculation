@@ -19,7 +19,7 @@ function Bar() {
             Надеждин Никита Алексеевич
           </UserNameAccount>
         </UserIconButton>
-
+        
 
       </UserNavigationBox>
       <Burger sx={{ display: { xs: 'flex', md: 'none' } }}>
@@ -34,6 +34,16 @@ function Bar() {
 
 export { Bar };
 
+
+const MainBox = styled(Toolbar)(({ theme }) => ({
+  justifyContent: 'flex-end',
+  backgroundColor: theme.palette.primary.main,
+  color: theme.palette.secondary.main,
+  boxShadow: '0px 0px 8px 4px #0000006c',
+  zIndex: 1
+}));
+
+
 const BoxIcon = styled(Box)(({ theme }) => ({
   position: 'relative',
   display: 'flex',
@@ -43,14 +53,6 @@ const BoxIcon = styled(Box)(({ theme }) => ({
 
 const Icon = styled(Typography)(({ theme }) => ({
   fontSize: '24px',
- 
-}))
-
-const MainBox = styled(Toolbar)(({ theme }) => ({
-  justifyContent: 'flex-end',
-  backgroundColor: theme.palette.primary.main,
-  color: theme.palette.secondary.main,
-  boxShadow: '0px 0px 8px 4px #0000006c'
 }));
 
 const UserIconButton = styled(Box)(() => ({
