@@ -28,9 +28,9 @@ function envByUrl() {
         // Если окружение - разработка, возвращаем пустую строку
         case EEnviroment.Develop:
             return '';
-        // Если окружение - продакшн, возвращаем конкретный путь '/Calculation/'
+        // Если окружение - продакшн, возвращаем конкретный путь '/toll-calculation/'
         case EEnviroment.Production:
-            return '/Calculation/';
+            return '/toll-calculation/';
     }
 };
 
