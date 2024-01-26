@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/toll-calculation/static/css/main.40875e6c.css",
+    "main.js": "/toll-calculation/static/js/main.a49ef6e6.js",
+    "static/media/oFont.ttf": "/toll-calculation/static/media/oFont.4c89a0b0a449cad019a6.ttf",
+    "index.html": "/toll-calculation/index.html",
+    "main.40875e6c.css.map": "/toll-calculation/static/css/main.40875e6c.css.map",
+    "main.a49ef6e6.js.map": "/toll-calculation/static/js/main.a49ef6e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40875e6c.css",
+    "static/js/main.a49ef6e6.js"
+  ]
+}
