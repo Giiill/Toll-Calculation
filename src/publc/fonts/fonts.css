@@ -1,0 +1,6 @@
+@font-face {
+	font-family: "oFont";
+	src: local("oFont"),
+	 url("oFont.ttf") format("truetype");
+	font-weight: normal;
+}
