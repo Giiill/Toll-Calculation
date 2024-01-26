@@ -30,7 +30,7 @@ function envByUrl() {
             return '';
         // Если окружение - продакшн, возвращаем конкретный путь '/toll-calculation/'
         case EEnviroment.Production:
-            return '/toll-calculation/';
+            return '/Toll-Calculation/';
     }
 };
 
